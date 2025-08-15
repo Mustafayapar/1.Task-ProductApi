@@ -34,9 +34,9 @@ Proje, temel **CRUD işlemleri**, **Katmanlı Mimari (Controller-Service-Reposit
 
 1. Projeyi klonlayın:
 
-```bash
+bash
 git clone <repository-url>
-cd BackendDeveloper-1Task
+cd 1.Task-ProductApi
 ---
 
 ## Gerekli NuGet paketlerini yükleyin:
@@ -54,7 +54,7 @@ cd BackendDeveloper-1Task
 appsettings.json dosyasını açın ve bağlantı stringinizi güncelleyin:
 
 "ConnectionStrings": {
-  "DefaultConnection": "Host=localhost;Port=5432;Database=product_db;Username=root;Password=12345"
+  "DefaultConnection": "Host=localhost;Port=5432;Database=product_db;Username=postgres;Password=****"
 }
 
 ---
@@ -76,7 +76,7 @@ Projeyi açın
 F5 veya Ctrl+F5 ile çalıştırın
 
 Terminal üzerinden:
-dotnet run --project BackendDeveloper-1.Task.Api
+dotnet run --project 1.Task-ProductApi
 
 ---
 
