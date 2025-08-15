@@ -1,4 +1,4 @@
-# 1Task- Product API
+# 1.Task- Product API
 
 Bu proje, **.NET 6+ (ASP.NET Core)** kullanılarak geliştirilmiş basit bir Product API uygulamasıdır.  
 Proje, temel **CRUD işlemleri**, **Katmanlı Mimari (Controller-Service-Repository)**, **Entity Framework Core ile PostgreSQL/MSSQL** entegrasyonu ve **Swagger API dokümantasyonu** içermektedir.
@@ -59,13 +59,13 @@ appsettings.json dosyasını açın ve bağlantı stringinizi güncelleyin:
 
 ---
 
-##Migration ve veritabanı güncelleme:
+## Migration ve veritabanı güncelleme:
 
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 ---
 
-##Çalıştırma
+## Çalıştırma
 
 Visual Studio üzerinden:
 
@@ -80,7 +80,7 @@ dotnet run --project 1.Task-ProductApi
 
 ---
 
-##Swagger API Dokümantasyonu
+## Swagger API Dokümantasyonu
 
 Swagger UI ile API endpoint’lerini inceleyebilir ve test edebilirsiniz:
 
