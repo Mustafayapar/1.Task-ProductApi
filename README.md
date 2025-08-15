@@ -1,4 +1,4 @@
-# BackendDeveloper-1Task
+# 1Task- Product API
 
 Bu proje, **.NET 6+ (ASP.NET Core)** kullanılarak geliştirilmiş basit bir Product API uygulamasıdır.  
 Proje, temel **CRUD işlemleri**, **Katmanlı Mimari (Controller-Service-Repository)**, **Entity Framework Core ile PostgreSQL/MSSQL** entegrasyonu ve **Swagger API dokümantasyonu** içermektedir.
@@ -37,3 +37,60 @@ Proje, temel **CRUD işlemleri**, **Katmanlı Mimari (Controller-Service-Reposit
 ```bash
 git clone <repository-url>
 cd BackendDeveloper-1Task
+---
+
+## Gerekli NuGet paketlerini yükleyin:
+
+- .NET 6+ (ASP.NET Core Web API)
+- C#
+- PostgreSQL veya MSSQL
+- Entity Framework Core
+- Swagger (Swashbuckle.AspNetCore)
+
+---
+
+## Veritabanı bağlantısını yapılandırın:
+
+appsettings.json dosyasını açın ve bağlantı stringinizi güncelleyin:
+
+"ConnectionStrings": {
+  "DefaultConnection": "Host=localhost;Port=5432;Database=product_db;Username=root;Password=12345"
+}
+
+---
+
+##Migration ve veritabanı güncelleme:
+
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+---
+
+##Çalıştırma
+
+Visual Studio üzerinden:
+
+Projeyi açın
+
+1.Task-ProductApi projesini startup project yapın
+
+F5 veya Ctrl+F5 ile çalıştırın
+
+Terminal üzerinden:
+dotnet run --project BackendDeveloper-1.Task.Api
+
+---
+
+##Swagger API Dokümantasyonu
+
+Swagger UI ile API endpoint’lerini inceleyebilir ve test edebilirsiniz:
+
+URL: https://localhost:7035/swagger
+
+Swagger JSON dosyası: Docs/swagger.json (GitHub deposunda)
+
+
+
+
+
+
+
